@@ -319,7 +319,7 @@ a:hover {
 
 .destn-img-container-mini-end {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .destination {
