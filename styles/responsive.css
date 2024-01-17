@@ -3,17 +3,18 @@
 @media screen and (max-width: 600px) {
 
     body {
-        margin: 0px auto;
-
+        margin: 0vh auto;
     }
 
     /* Ḥeader Section Styles */
     header {
-        padding: 18px 0px 18px 20px;
+        width: 100%;
+        height: 20vw;
     }
 
     .heading-box {
-        padding: 0px 0px 20px 20px;
+        padding: 5vh 0vh 5vh 10vh;
+        margin: 0vh;
     }
 
     .nav-box {
@@ -22,33 +23,38 @@
 
     .mobile-menu {
         display: flex;
-        width: 34px;
-        height: 34px;
-        padding: 50px;
+        flex-direction: row-reverse;
+        height: 10vw;
+        margin: 6vw 4vw 4vw 10vw;
     }
 
     /* Banner Section */
 
     .banner-container {
-        width: 1080px;
-        height: 700px;
-        margin: 20px auto;
-        margin-left: 75px;
+        width: 95%;
+        height: 120%;
+        margin: 0vw auto;
     }
 
     .banner-box {
-        width: 1080px;
+        width: 100%;
     }
 
     .banner-menu {
         display: block;
+        padding: 10% 6%;
     }
 
     .banner-menu input {
         width: 80%;
-        margin: 10px;
+        margin: 3vh;
     }
 
+    .banner-text{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10vh;
+    }
     .banner-menu button {
         width: 80%;
         margin-top: 10px;
@@ -57,26 +63,32 @@
 
     /* Popular Tour Section */
     .p-tour-container {
-        display: block;
-        width: 180vw;
-        margin: 24px 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        width: 95%;
+        margin: 10vw auto 20vh;
     }
 
-    .p-tour-box {}
+    .p-tour-box{
+        margin: 4vh auto;
+        width: 90%;
+    }
 
     .p-tour-title {
-        font-size: 5em;
+        font-size: 50px;
     }
 
     .p-tour-detail,
     .p-tour-detail-btm {
-        font-size: 25px;
-        line-height: 40px;
+        font-size: 20px;
+        line-height: 35px;
     }
 
     .p-tour-list {
-        font-size: 25px;
-        line-height: 40px;
+        font-size: 20px;
+        line-height: 35px;
         margin-left: 20px;
     }
 
@@ -87,24 +99,24 @@
     }
 
     .p-tour-img {
-        width: 1080px;
-        margin-left: 0px;
+        width: 90%;
+        margin: 0vh auto;
     }
 
     /* Destination Section */
 
     .destn-box {
-        width: 180vw;
-        margin: 10vw 15vw;
+        width: 100%;
+        margin: 0vw auto 20vh;
     }
 
     .destn-title {
-        font-size: 4em;
+        font-size: 40px;
     }
 
     .destn-detail {
-        font-size: 6vh;
-        line-height: 10vh;
+        font-size: 20px;
+        line-height: 25px;
     }
 
     .destn-img-container {
@@ -114,7 +126,7 @@
     .destn-img-container-mini,
     .destn-img-container-mini-end {
         display: block;
-        width: 180vw;
+        width: 100%;
     }
 
     .destn-img,
@@ -122,9 +134,11 @@
     .destn-img-box-6,
     .destn-img-box-7,
     .destn-img-box-5 {
-        width: 160vw;
+        width: 70%;
         margin: 4vw auto;
         background-size: cover;
+        background-position: center;
+        
     }
 
     .destn-img-box-5 {
@@ -132,6 +146,7 @@
         background-image: url('../images/rectangle-j9.png');
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
         border-radius: 16px;
     }
 
@@ -142,30 +157,33 @@
     /* Choose Us section */
 
     .why-ch-us-container {
-        width: 180vw;
-        margin: 8vw 15vw;
-
+        width: 95%;
+        margin: 0vh auto;
     }
 
+    .why-ch-us{
+        width: 90%;
+        margin: 0vh auto;
+    }
     .why-ch-us-text {
-        font-size: 6vh;
+        font-size: 25px;
         line-height: 40px;
+        width: 100%;
     }
 
     .why-ch-us-title {
-        font-size: 16vh;
+        font-size: 50px;
     }
 
     .why-box {
         display: block;
-        margin: 0vw 30vw;
+        margin: 0vw auto;
     }
 
     .why-box-mini {
-        margin: 8vh auto;
-        padding: 8vw;
-        padding-bottom: 8vh;
-        height: 100vh;
+        margin: 10% auto;
+        height: 60vh;
+        width: 90%;
     }
 
     .mini-3 {
@@ -173,32 +191,44 @@
     }
 
     .why-box-title {
-        font-size: 7vw;
+        font-size: 35px;
     }
 
     .why-box-detail {
-        font-size: 4vw;
-        line-height: 8vh;
+        font-size: 20px;
+        line-height: 40px;
     }
 
     /* Deals and Discount Section */
+
     .discount-container {
-        margin: 10vh 15vw;
-        width: 180vw;
+        margin: 0% auto;
+        width: 95%;
     }
 
+    .time-place-box{
+        justify-content: center;
+        align-items: center;
+        margin: 6vw 5vw;
+    }
+
+    .time-place-box p{
+        padding: 0px 10px;
+    }
     .deal-container-1,
     .deal-container-3,
     .deal-container-2 {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column-reverse;
+        background-position: center;
+        height: 800px;
     }
 
     .deal-box-1,
     .deal-box-2,
     .deal-box-3 {
-        width: 180vw;
+        width: 80%;
+        height: 400px;
     }
 
     .deal-detail {
@@ -206,65 +236,78 @@
     }
 
     .deal-title {
-        font-size: 16vh;
+        font-size: 50px;
     }
 
     .deal-detail-caption {
-        font-size: 8vh;
-        line-height: 12vh;
+        font-size: 20px;
+        line-height: 30px;
+        width: 80%;
     }
 
+    .packege-btn{
+        margin: 10% -10%;
+    }
+
+
     /* Get lost container */
+
     .get-lost-container {
-        width: 250vh;
-        margin: 10vh 15vw;
+        width: 90%;
+        margin: 0vh auto;
     }
 
     .get-lost-box {
         display: block;
+        margin: 10vh auto;
     }
 
     .get-lost-title {
-        font-size: 16vh;
-        line-height: 25vh;
-        width: 120vw;
+        font-size: 50px;
+        width: 80%;
     }
 
     .get-lost-text,
     .get-lost-link {
-        font-size: 8vh;
-        line-height: 16vh;
+        font-size: 25;
+        line-height: 6vh;
     }
 
     .see-more-btn {
-        margin: 4vh;
+        margin: 8vh 4vh;
 
     }
 
     .get-lost-img-box {
-        width: 180vw;
+        width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
-        font-size: 8vh;
+        font-size: 35px;
     }
 
     .newsletter-container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .newsletter-box {
         margin-bottom: 10vh;
+        margin-right: 0vw;
+        width: 100%;
     }
 
     .nsltr-title {
-        font-size: 16vh;
-        padding: 40px 0px 0px 40px;
+        font-size: 50px;
+        text-align: left;
+        padding: 40px 0px 0px 20px;
     }
 
     .news-text {
-        font-size: 6vh;
-        line-height: 10vh;
+        font-size: 25px;
+        line-height: 30px;
+        padding-left: 20px;
     }
 
     .border {
@@ -274,18 +317,21 @@
     }
 
     .newsletter-box input {
-        width: 95%;
-        height: 25vh;
+        width: 80%;
+        height: 100px;
+        margin: 4vh auto;
+        margin-left: 20px;
     }
 
     .newsletter-box input::placeholder {
-        font-size: 6vh;
+        font-size: 30px;
     }
 
     .subscribe {
-        width: 80vw;
+        width: 80%;
         height: 20vw;
-        font-size: 8vh;
+        font-size: 30px;
+        margin: 20px;
     }
 
     .news-img-box {
@@ -293,10 +339,22 @@
         width: 98%;
     }
 
+
+    /* Bonus section */
+
+
     .bonus-container{
-        margin: 0px 10vw;
-        width: 180vw;
+        margin: 0px auto;
+        width: 90%;
     }
+
+    .motivation iframe{
+        width: 70%;
+        height: 69%;
+    }
+
+
+    
     /* Footer Section */
     footer {
         width: 100%;
@@ -306,12 +364,12 @@
         background: rgba(19, 19, 24, 0.05);
         text-align: center;
         padding-bottom: 110px;
-        width: 200%;
+        width: 100%;
     }
 
     .foot-title,
     .foot-title span {
-        font-size: 16vh;
+        font-size: 35px;
     }
 
     .foot-icon {
@@ -319,13 +377,14 @@
     }
 
     .foot-detail {
-        margin: 15px auto 32px;
+        margin: 2vh auto 4vh;
         color: #5A5A5D;
         text-align: center;
         font-family: Mulish;
-        width: 770px;
-        font-size: 5vw;
-        line-height: 15vh;
+        width: 90%;
+        font-size: 20px;
+        line-height: 35px;
+        margin-top: 30px;
         padding-bottom: 10vh;
     }
 
@@ -334,7 +393,7 @@
     }
 
     .copyright {
-        font-size: 6vh;
+        font-size: 20px;
     }
 
 }
